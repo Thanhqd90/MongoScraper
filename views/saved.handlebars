@@ -17,10 +17,8 @@
         {{#each article}}
         {{#if saved}}
           <h3 class="text-center mt-3">{{title}}</h3><br>
-          <h5 class="p-3">{{paragraph}}<a class="text-center" href="https://www.houstonchronicle.com{{link}}">Click
-              here to view entire article > ></a></h5><br>
-          <button class="addNote btn info-color-dark" data-toggle="modal" data-target="#exampleModal" data-id={{_id}}><i
-              class="far fa-edit"></i> Add a note</button>
+          <h5 class="p-3">{{paragraph}}<a class="text-center" href="https://www.houstonchronicle.com{{link}}" target="_blank">Click here to view entire article > ></a></h5><br>
+          <button class="addNote btn info-color-dark" data-toggle="modal" data-target="#exampleModal" data-id={{_id}}><i class="far fa-edit"></i> Add a note</button>
           <button class="btn btn-danger saveArtDel" data-id={{_id}}>Delete Saved 
             <i class="far fa-trash-alt"></i></button>
           <hr>
